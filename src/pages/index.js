@@ -6,6 +6,7 @@ import firebase from '@/services/firebaseConnection'
 import Modal from '@/components/Modal'
 import Header from '@/components/Header'
 import Dashboard from '@/components/Dashboard'
+import Table from '@/components/Table'
 
 export default function Home() {
     const [data, setData] = useState([]);
@@ -75,6 +76,8 @@ export default function Home() {
                     outValue={values.outValue}
                     totalValue={values.totalValue}
                 />
+
+                <Table data={data} />
 
                 {(modalStatus && <Modal closeModal={() => setModalStatus(false)} />)}
             </main>

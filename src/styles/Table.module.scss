@@ -1,0 +1,34 @@
+.table {
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.headerTable {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    th {
+        font-size: 18px;
+        color: #B9B9B9;
+        text-align: left;
+        width: 30%;
+    }
+}
+
+.icon {
+    width: 20px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .table {
+        margin: 0 5px;
+    }
+
+    .headerTable {
+        flex-direction: column;
+    }
+}
