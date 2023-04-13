@@ -29,7 +29,7 @@ export default function TableItem({ data }) {
         setDate(`${dia}/${mes}/${ano} às ${hora}h${minutos}`);
     }
 
-    useEffect(() => formatDate(), []);
+    useEffect(() => formatDate());
 
     return (
         <tr className={styles.item}>
