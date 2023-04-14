@@ -45,7 +45,7 @@ export default function Home() {
                     data.forEach((item) => {
                         if(item.type === "in") inValue += +item.value;
                         if(item.type === "out") outValue += +item.value;
-                        totalValue += +item.value;
+                        totalValue = inValue - outValue;
                     })
 
                     setValues({
